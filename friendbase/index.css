@@ -3,10 +3,16 @@ body {
 }
 
 #app{
-    font-family: 'Avenir', Arial, Helvetica, sans-serif;
+font-family: 'Avenir', Arial, Helvetica, sans-serif;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 text-align: center;
 color: white;
 margin-top: 60px;
 }
+
+.character-card {
+    border: 2px solid #4FC08D;
+    border-radius: 4px;
+    cursor: pointer;
+    }
