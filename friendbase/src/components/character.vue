@@ -14,20 +14,18 @@ export default {
         }
     },
     methods: {
-        fetchCharacter() {
-      fetch('http://swapi.co/api/people/1',
+    fetchCharacter() {
+      fetch('https://cors-anywhere.herokuapp.com/https://swapi.co/api/people/1',
       {
-        mode: 'no-cors'
-      },
-      {
-        method: 'GET'
+        method: 'GET',
       })
       .then(response => response.json())
-      .then(json => console.log(json))
+      .then(json => this.character = json)
+    }
     },
-    created() {
-        this.fetchCharacter();
+    created(){
+        this.fetchCharacter()
     }
-    }
+
 }
 </script>
