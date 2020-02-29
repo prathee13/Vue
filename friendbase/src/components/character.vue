@@ -1,6 +1,5 @@
 <template>
     <div class="col-md-4" @click="switchCharacter">
-        {{character}}
         <div class="character-card">
             <div class="card-block">
                 <h4 class="card-title">{{character.name}}</h4>
